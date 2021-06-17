@@ -1,6 +1,11 @@
 "use strict"
 
-const http = require('http'); //http paket bawaan Node.js untuk mendukung fitur2 protokol HTTP
+/**
+ * require() : fungsi sinkron yang meload paket atau modul lain dari sistem file
+ * http : paket bawaan Node.js untuk mendukung fitur2 protokol HTTP
+ */
+
+const http = require('http');
 const PORT = 3400;
 
 const server = http.createServer((req,res) => {

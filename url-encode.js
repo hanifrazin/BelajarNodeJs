@@ -1,8 +1,11 @@
 "use strict"
 
-const { NOTFOUND } = require('dns');
+/**
+ * Sumber : https://idjs.github.io/belajar-nodejs/pemrosesan_data_form_html/url_encoded.html
+ */
+
 const http = require('http');
-const data = [];
+let data = [];
 const qs = require('querystring');
 
 const server = http.createServer((req,res) => {
@@ -50,7 +53,7 @@ const prosesData = (req, res) => {
     });
 
     req.on('end', () => {
-        const data = qs.parse(body);
+        data = qs.parse(body);
         res.setHeader('Content-Type','text/plain');
         res.end(`Hobiku : ${data.hobi}`);
     });
