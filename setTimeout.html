@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Timeout</title>
+</head>
+<body>
+<button onclick="buttonClick()">Click Me</button>
+    <script>
+        function callback() {
+            console.log("Hello World");
+        }
+
+        function buttonClick() {
+            // sync
+            // callback();
+            // console.log("Success Click Button");
+
+            // async setTimeout
+            // setTimeout(function(){
+            //     callback();
+            // },5000);
+            // console.log("Success Click Button");
+
+            // async setInterval
+            setInterval(callback, 3000);
+            console.log("Sukses Click Button");
+        }
+    </script>
+</body>

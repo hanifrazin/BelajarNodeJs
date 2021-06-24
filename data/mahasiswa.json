@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Cathleen Speerman",
+    "email": "cspeerman0@acquirethisname.com",
+    "gender": "Bigender",
+    "city": "T’azagyugh"
+  }, 
+  {
+    "id": 2,
+    "name": "Sascha Cockell",
+    "email": "scockell1@wordpress.org",
+    "gender": "Genderfluid",
+    "city": "Dijon"
+  }, 
+  {
+    "id": 3,
+    "name": "Danny Ausello",
+    "email": "dausello2@goo.ne.jp",
+    "gender": "Agender",
+    "city": "Krasnoarmeysk"
+  }, 
+  {
+    "id": 4,
+    "name": "Dasie Di Maggio",
+    "email": "ddi3@jiathis.com",
+    "gender": "Genderqueer",
+    "city": "Lendangara Satu"
+  }, 
+  {
+    "id": 5,
+    "name": "Wain Heindle",
+    "email": "wheindle4@nasa.gov",
+    "gender": "Bigender",
+    "city": "Ma’ao"
+  }, 
+  {
+    "id": 6,
+    "name": "Bryce McGilleghole",
+    "email": "bmcgilleghole5@dailymail.co.uk",
+    "gender": "Female",
+    "city": "Calabugao"
+  }, 
+  {
+    "id": 7,
+    "name": "Rosemonde Flippelli",
+    "email": "rflippelli6@phoca.cz",
+    "gender": "Genderqueer",
+    "city": "Shangganshan"
+  }, 
+  {
+    "id": 8,
+    "name": "El McShee",
+    "email": "emcshee7@unesco.org",
+    "gender": "Genderqueer",
+    "city": "Kongwan"
+  }, 
+  {
+    "id": 9,
+    "name": "Perry Ramelot",
+    "email": "pramelot8@youtu.be",
+    "gender": "Genderqueer",
+    "city": "Puerto Tejada"
+  }, 
+  {
+    "id": 10,
+    "name": "Moises Stoodley",
+    "email": "mstoodley9@soup.io",
+    "gender": "Polygender",
+    "city": "Saint Lucia"
+  }
+]
