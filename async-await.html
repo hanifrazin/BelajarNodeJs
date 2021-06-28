@@ -5,7 +5,7 @@
     <title>Async Await</title>
     <script>
         function getProductsUrl(keyword) {
-            return `https://www.blibli.com/backend/search/products?searchTerm=${keyword}`;
+            return `https://www.blibli.com/backend/sad/products?searchTerm=${keyword}`;
         }
 
         function getProducts(keyword) {
@@ -28,6 +28,8 @@
                 method: "GET"
             }).then(function(response){
                 return response.json();
+            }).catch(function(error){
+                return error;
             });
         }
 
@@ -62,7 +64,7 @@
                     displayProduct(product);
                 });
             } catch (error) {
-                alert(`Errornya ${error.message}`);
+                alert(`Errornya adalah ${error.message}`);
             } finally{
                 console.log("Selesai proses button");
             }
