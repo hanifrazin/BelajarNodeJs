@@ -49,15 +49,39 @@
         }
 
         function buttonClick() {
-            const promise = getProducts(document.getElementById("keyword").value);
-            promise
-                .then(function(value){
-                    return value.data.products;
+            // const promise = getProducts(document.getElementById("keyword").value);
+            // promise
+            //     .then(function(value){
+            //         return value.data.products;
+            //     })
+            //     .then(function(product){
+            //         clearProducts();
+            //         product.forEach(function(value){
+            //             displayProduct(value);
+            //         });
+            //     })
+            //     .catch(function(error){
+            //         alert(error.message);
+            //     })
+            //     .finally(function(){
+            //         console.log("Selesai");
+            //     })
+
+            const promise1 = getProducts(document.getElementById("keyword").value);
+            const promise2 = getProducts(document.getElementById("keyword2").value);
+            const promise3 = getProducts(document.getElementById("keyword3").value);
+
+            Promise.all([promise1,promise2,promise3])
+                .then(function(values){
+                    console.log(values);
+                    return values.map(value => value.data.products);
                 })
-                .then(function(product){
+                .then(function(values){
                     clearProducts();
-                    product.forEach(function(value){
-                        displayProduct(value);
+                    values.forEach(function(products){
+                        products.forEach(function(product){
+                            displayProduct(product);
+                        })
                     });
                 })
                 .catch(function(error){
@@ -66,11 +90,16 @@
                 .finally(function(){
                     console.log("Selesai");
                 })
+
+
+
         }
     </script>
 </head>
 <body>
 <input type="text" id="keyword">
+<input type="text" id="keyword2">
+<input type="text" id="keyword3">
 <button onclick="buttonClick()">Search Products</button>
 <ul id="products"></ul>
 </body>
