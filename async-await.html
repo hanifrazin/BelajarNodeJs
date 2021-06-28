@@ -54,12 +54,18 @@
 
 
             // AFTER
-            const value = await getProducts(document.getElementById("keyword").value);
-            const products = value.data.products;
-            clearProducts();
-            products.forEach(function(product){
-                displayProduct(product);
-            });
+            try {
+                const value = await getProducts(document.getElementById("keyword").value);
+                const products = value.data.products;
+                clearProducts();
+                products.forEach(function(product){
+                    displayProduct(product);
+                });
+            } catch (error) {
+                alert(`Errornya ${error.message}`);
+            } finally{
+                console.log("Selesai proses button");
+            }
         }
     </script>
 </head>
